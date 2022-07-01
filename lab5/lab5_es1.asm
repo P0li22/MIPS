@@ -6,7 +6,7 @@ x: .word 3141592653
 .ent main
 main:
 lw $t0, x
-li $t2, 0 # contatore stack frame
+li $t2, 0 # contatore stack
 li $t3, '0'
 li $t4, 10
 
