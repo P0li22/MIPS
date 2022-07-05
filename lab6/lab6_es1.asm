@@ -10,14 +10,11 @@ addi $t0, $0, 1
 lb $t1, lato
 loop:
 add $a0, $t0, $0
-# salvo $t0 e $t1
-addi $sp, $sp, -8
+addi $sp, $sp, -8 # salvo $t0 e $t1
 sw $t0, 0($sp)
 sw $t1, 4($sp)
-
 jal print
-# ripristino $t0 e $t1
-lw $t0, 0($sp)
+lw $t0, 0($sp) # ripristino $t0 e $t1
 lw $t1, 4($sp)
 addi $sp, $sp, 8
 
