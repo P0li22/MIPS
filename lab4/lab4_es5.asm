@@ -72,3 +72,4 @@ sw $s1, 0($s0)
 quit:
 li $v0, 10
 syscall
+.end main

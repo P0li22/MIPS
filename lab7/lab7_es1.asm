@@ -26,7 +26,9 @@ addi $sp, $sp, -16
 add $t4, $v0, $0
 li $v0, 10
 syscall
+.end main
 
+.ent somma
 somma:
 addi $sp, $sp, -20
 sw $s0, 16($sp)
@@ -52,3 +54,4 @@ lw $s3, 4($sp)
 lw $s4, 0($sp)
 addi $sp, $sp, 20
 jr $ra
+.end somma

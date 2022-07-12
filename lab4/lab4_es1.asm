@@ -23,3 +23,4 @@ bne $t4, 20, loop
 
 li $v0, 10
 syscall
+.end main

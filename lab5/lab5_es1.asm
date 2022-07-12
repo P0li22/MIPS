@@ -31,3 +31,4 @@ bne $t2, 0, loop_print
 
 li $v0, 10
 syscall
+.end main

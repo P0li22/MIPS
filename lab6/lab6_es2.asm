@@ -27,7 +27,9 @@ ble $t0, $t1, loop
 
 li $v0, 10
 syscall
+.end main
 
+.ent print
 print:
 add $t0, $0, $0
 add $t1, $a0, $0
@@ -40,3 +42,4 @@ bne $t0, $t1, loop_print
 lb $a0, newline
 syscall
 jr $ra
+.end print

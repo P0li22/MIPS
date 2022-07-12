@@ -23,9 +23,12 @@ la $a0, str
 syscall
 li $v0, 10
 syscall
+.end main
 
+.ent caps
 caps:
 # si suppone che la stringa sia composta solo da caratteri alfabetici minuscoli
 addi $a0, $a0, -32 # oppure $a0 - "a" + "A"
 add $v0, $a0, $0
 jr $ra
+.end caps

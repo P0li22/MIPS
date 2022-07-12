@@ -13,7 +13,9 @@ li $v0, 1
 syscall
 li $v0, 10
 syscall
+.end main
 
+.ent max
 max:
 addi $t0, $0, 1 # contatore
 lw $v0, 0($a0) # salva il max
@@ -27,3 +29,4 @@ addi $a0, $a0, 4
 addi $t0, $t0, 1
 bne $t0, $a1, loop
 jr $ra
+.end max

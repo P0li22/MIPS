@@ -60,3 +60,4 @@ syscall
 end:
 li $v0, 10
 syscall
+.end main

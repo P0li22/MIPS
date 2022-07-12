@@ -44,3 +44,4 @@ bne $t1, 4, loop1
 
 li $v0, 10
 syscall
+.end main

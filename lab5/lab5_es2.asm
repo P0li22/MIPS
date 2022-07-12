@@ -53,3 +53,4 @@ end:
 add $sp, $s0, $0 # ripristina stack
 li $v0, 10
 syscall
+.end main

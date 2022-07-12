@@ -37,3 +37,4 @@ bne $t1, 10, loop1
 
 li $v0, 10
 syscall
+.end main

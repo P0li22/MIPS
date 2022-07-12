@@ -13,7 +13,9 @@ li $v0, 1
 syscall
 li $v0, 10
 syscall
+.end main
 
+.ent combina
 combina:
 addi $t0, $0, 1 # calcola numeratore
 addi $t1, $0, 1 # calcola denominatore
@@ -31,3 +33,4 @@ bne $a1, 0, denominatore
 
 div $v0, $t0, $t1
 jr $ra
+.end combina
